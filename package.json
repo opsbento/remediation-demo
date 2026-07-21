@@ -1,0 +1,9 @@
+{
+  "name": "remediation-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo repository for dependency remediation workflow testing.",
+  "dependencies": {
+    "lodash": "4.17.19"
+  }
+}
