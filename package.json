@@ -4,7 +4,7 @@
   "private": true,
   "description": "Demo repository for dependency remediation workflow testing.",
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "0.32.0",
     "dayjs": "1.11.13",
     "express": "4.17.1",
     "lodash": "4.17.19",
