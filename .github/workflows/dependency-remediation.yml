@@ -10,6 +10,8 @@ permissions:
 jobs:
   remediate:
     uses: opsbento/security-workflows/.github/workflows/dependency-remediation.yml@main
+    secrets:
+      remediation-token: ${{ secrets.REMEDIATION_TOKEN }}
     with:
       working-directory: "."
       ecosystem: npm
@@ -18,3 +20,4 @@ jobs:
       maximum-updates: 1
       remediation-core-ref: main
       security-workflows-ref: main
+      pr-labels: ""
