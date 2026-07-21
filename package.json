@@ -4,6 +4,6 @@
   "private": true,
   "description": "Demo repository for dependency remediation workflow testing.",
   "dependencies": {
-    "lodash": "4.17.19"
+    "lodash": "4.18.0"
   }
 }
