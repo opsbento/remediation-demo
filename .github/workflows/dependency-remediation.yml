@@ -18,6 +18,6 @@ jobs:
       minimum-severity: high
       allow-major: false
       maximum-updates: 1
-      remediation-core-version: v0.1.0
+      remediation-core-version: v0.1.1
       security-workflows-ref: main
       pr-labels: ""

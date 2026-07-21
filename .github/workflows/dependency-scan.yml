@@ -16,3 +16,4 @@ jobs:
     with:
       working-directory: "."
       minimum-severity: high
+      security-workflows-ref: main
