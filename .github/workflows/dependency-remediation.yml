@@ -20,4 +20,5 @@ jobs:
       maximum-updates: 1
       remediation-core-version: v0.1.1
       security-workflows-ref: main
+      upload-artifacts: false
       pr-labels: ""
