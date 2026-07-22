@@ -29,7 +29,7 @@ Do not run the end-to-end remediation test locally; this repository exists for p
 The demo uses:
 
 ```yaml
-remediation-core-version: v0.2.2
+remediation-core-version: v0.2.3
 security-workflows-ref: main
 upload-artifacts: false
 maximum-updates: 5
