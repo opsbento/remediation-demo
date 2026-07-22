@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   scan:
+    if: github.event_name != 'pull_request' || !startsWith(github.head_ref, 'remediation/')
     uses: opsbento/security-workflows/.github/workflows/dependency-scan.yml@main
     with:
       working-directory: "."

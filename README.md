@@ -31,3 +31,5 @@ pr-labels: ""
 ```
 
 Set the repository secret `REMEDIATION_TOKEN` when the default `GITHUB_TOKEN` is not allowed to create Pull Requests.
+
+Pull requests from `remediation/*` branches skip the generic dependency scan gate. Those PRs rely on the remediation workflow verification, while normal pull requests and manual scans still run the blocking dependency scan.
