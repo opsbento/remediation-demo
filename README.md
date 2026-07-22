@@ -8,7 +8,7 @@ Current direct dependencies include intentionally old packages such as `lodash`,
 
 ## Pipeline Test
 
-The `Dependency Remediation` workflow runs weekly and can also be started manually from GitHub Actions. Expected behavior:
+The `Dependency Remediation` workflow runs daily and can also be started manually from GitHub Actions. Expected behavior:
 
 1. the workflow calls `opsbento/security-workflows`;
 2. `security-workflows` downloads and runs the pinned `opsbento/remediation-core` CLI release;
