@@ -4,11 +4,11 @@
   "private": true,
   "description": "Demo repository for dependency remediation workflow testing.",
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "0.33.0",
     "dayjs": "1.11.13",
     "express": "4.17.1",
-    "lodash": "4.17.19",
-    "minimist": "0.0.8",
+    "lodash": "4.18.0",
+    "minimist": "0.2.4",
     "nanoid": "3.3.8"
   }
 }
