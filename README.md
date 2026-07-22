@@ -8,7 +8,7 @@ Current direct dependencies include intentionally old packages such as `lodash`,
 
 ## Pipeline Test
 
-Run the `Dependency Remediation` workflow manually from GitHub Actions. Expected behavior:
+The `Dependency Remediation` workflow runs weekly and can also be started manually from GitHub Actions. Expected behavior:
 
 1. the workflow calls `opsbento/security-workflows`;
 2. `security-workflows` downloads and runs the pinned `opsbento/remediation-core` CLI release;
@@ -33,3 +33,5 @@ pr-labels: ""
 Set the repository secret `REMEDIATION_TOKEN` when the default `GITHUB_TOKEN` is not allowed to create Pull Requests.
 
 Pull requests from `remediation/*` branches skip the generic dependency scan gate. Those PRs rely on the remediation workflow verification, while normal pull requests and manual scans still run the blocking dependency scan.
+
+The generic `Dependency Scan` workflow runs on normal dependency pull requests, package file changes pushed to `main`, and manual dispatch.
