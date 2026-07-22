@@ -30,7 +30,7 @@ The demo uses:
 
 ```yaml
 remediation-core-version: v0.2.3
-security-workflows-ref: main
+security-workflows-ref: v1
 upload-artifacts: false
 maximum-updates: 5
 pr-labels: ""

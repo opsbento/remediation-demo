@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   remediate:
-    uses: opsbento/security-workflows/.github/workflows/dependency-remediation.yml@main
+    uses: opsbento/security-workflows/.github/workflows/dependency-remediation.yml@v1
     secrets:
       REMEDIATION_TOKEN: ${{ secrets.REMEDIATION_TOKEN }}
     with:
@@ -21,6 +21,6 @@ jobs:
       allow-major: false
       maximum-updates: 5
       remediation-core-version: v0.2.3
-      security-workflows-ref: main
+      security-workflows-ref: v1
       upload-artifacts: false
       pr-labels: ""
