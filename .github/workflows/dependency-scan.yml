@@ -35,7 +35,7 @@ jobs:
             working-directory: go-service
           - name: python-service
             working-directory: python-service
-    uses: opsbento/security-workflows/.github/workflows/dependency-scan.yml@main
+    uses: opsbento/security-workflows/.github/workflows/dependency-scan.yml@v1
     with:
       working-directory: ${{ matrix.working-directory }}
       minimum-severity: high
