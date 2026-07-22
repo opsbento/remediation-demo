@@ -8,10 +8,16 @@ on:
     paths:
       - package.json
       - package-lock.json
+      - go-service/go.mod
+      - go-service/go.sum
+      - python-service/requirements.txt
   pull_request:
     paths:
       - package.json
       - package-lock.json
+      - go-service/go.mod
+      - go-service/go.sum
+      - python-service/requirements.txt
 
 permissions:
   contents: read
@@ -19,9 +25,19 @@ permissions:
 jobs:
   scan:
     if: github.event_name != 'pull_request' || !startsWith(github.head_ref, 'remediation/')
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: npm-root
+            working-directory: "."
+          - name: go-service
+            working-directory: go-service
+          - name: python-service
+            working-directory: python-service
     uses: opsbento/security-workflows/.github/workflows/dependency-scan.yml@main
     with:
-      working-directory: "."
+      working-directory: ${{ matrix.working-directory }}
       minimum-severity: high
       security-workflows-ref: main
       upload-artifacts: false
