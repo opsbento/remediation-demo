@@ -19,8 +19,8 @@ jobs:
       ecosystem: npm
       minimum-severity: high
       allow-major: false
-      maximum-updates: 5
-      remediation-core-version: v0.2.5
+      maximum-updates: 25
+      remediation-core-version: v0.2.6
       security-workflows-ref: v1
       upload-artifacts: false
       pr-labels: ""
